@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87865398514948c4a939a6dcc6aa0d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
+  interactionRange: 2
+  rotationTime: 0.2
 --- !u!1 &3601955571425164864
 GameObject:
   m_ObjectHideFlags: 0
