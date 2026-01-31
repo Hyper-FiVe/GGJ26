@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 109571727902314320}
   - component: {fileID: 7793750578043886359}
   - component: {fileID: 7822784669250960105}
+  - component: {fileID: 603860047735379907}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -218,6 +219,19 @@ MonoBehaviour:
   moveSpeed: 5
   lookSpeed: 0.05
   lookRange: 80
+--- !u!114 &603860047735379907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093956336104331694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1f0d6f83692744cb27fe8f6d5dca38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  mask: 0
 --- !u!1 &2983620585467322427
 GameObject:
   m_ObjectHideFlags: 0

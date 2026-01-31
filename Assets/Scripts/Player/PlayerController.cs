@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     private Transform cameraTransform;
     private Vector2 moveInput;
     private float rotationX;
-    private bool isInteracting = false;
+
+    public bool IsInteracting { get; set; } = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isInteracting)
+        if (!IsInteracting)
         {
             Move();
         }
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!isInteracting)
+        if (!IsInteracting)
         {
             moveInput = context.ReadValue<Vector2>();
         }
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnLook(InputAction.CallbackContext context)
     {
-        if (!isInteracting)
+        if (!IsInteracting)
         {
             Vector2 input = context.ReadValue<Vector2>();
 
@@ -54,9 +55,9 @@ public class PlayerController : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (!isInteracting && context.started && GameManager.Instance.InteractableNPC != null)
+        if (!IsInteracting && context.started && GameManager.Instance.InteractableNPC != null)
         {
-            isInteracting = true;
+            IsInteracting = true;
             GameManager.Instance.InteractableNPC.Interact();
         }
     }

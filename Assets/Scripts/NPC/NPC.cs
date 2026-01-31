@@ -1,5 +1,8 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Utils;
+using Random = UnityEngine.Random;
 
 public class NPC : MonoBehaviour
 {
@@ -12,6 +15,22 @@ public class NPC : MonoBehaviour
     private Transform player;
     private Camera mainCamera;
 
+    [Serializable]
+    public struct NPCFeatures
+    {
+        public bool sex;
+        public Mask mask;
+        public NPCColor color;
+        public bool head;
+        public bool neck;
+        public Voice voice;
+        public Room room;
+        public Title title;
+        public bool interacted;
+    }
+
+    public NPCFeatures features;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +39,15 @@ public class NPC : MonoBehaviour
         targetRotation = defaultRotation;
         player = GameObject.FindWithTag("Player").transform;
         mainCamera = Camera.main;
+
+        features.sex = Convert.ToBoolean(Random.Range(0, 2));
+        features.mask = (Mask)Random.Range(0, 3);
+        features.color = (NPCColor)Random.Range(0, 4);
+        features.head = Convert.ToBoolean(Random.Range(0, 2));
+        features.neck = Convert.ToBoolean(Random.Range(0, 2));
+        features.voice = (Voice)Random.Range(0, 4);
+        features.title = (Title)Random.Range(0, 4);
+        features.interacted = Convert.ToBoolean(Random.Range(0, 2));
     }
 
     // Update is called once per frame
@@ -45,6 +73,8 @@ public class NPC : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         direction.y = 0;
         targetRotation = Quaternion.LookRotation(direction);
+
+        GameManager.Instance.StartDialogue();
     }
 
     public void EndInteraction()
