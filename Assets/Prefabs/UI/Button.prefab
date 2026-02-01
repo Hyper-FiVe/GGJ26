@@ -282,4 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1aba827d0d201045985748a0db2ed1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonManager
+  npc: {fileID: 0}
   dialogues: []
+  question: 
+  answer: 
+  textBox: {fileID: 0}
