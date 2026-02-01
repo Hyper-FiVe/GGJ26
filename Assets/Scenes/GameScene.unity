@@ -2623,7 +2623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   npcCount: 8
   dialogueCanvas: {fileID: 197324208}
-  introText: {fileID: 0}
+  introText: {fileID: 424726846}
   target: {fileID: 0}
 --- !u!1 &548786087
 GameObject:
