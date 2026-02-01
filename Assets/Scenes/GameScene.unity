@@ -268,6 +268,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 424726846}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: question
+      value: "\u201CFor how much time our host spends in that spot you could bet
+        it\u2019s their favourite place in this beautiful mansion, wouldn\u2019t
+        you agree\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -981,7 +987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &197324209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,6 +1241,11 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: question
+      value: "\u201CDecorating oneself with an elegant headdress shows great knowledge
+        in noble apparel. How would you describe our host\u2019s choice in regard?\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
       value: 3
@@ -2131,7 +2142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 976.4331, y: 220.47961}
+  m_AnchoredPosition: {x: 976.4331, y: 256}
   m_SizeDelta: {x: 1845.1338, y: 31.0408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424726846
@@ -2181,8 +2192,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4409,7 +4420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 76}
+  m_AnchoredPosition: {x: 0, y: 109}
   m_SizeDelta: {x: -936, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952273929
@@ -4425,7 +4436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6156863}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.972549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6445,6 +6456,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 424726846}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: question
+      value: "\u201CIsn\u2019t our host voice different than usual? I hope they won\u2019t
+        stress their chords from having to entertain so many guests\u2026\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -6876,6 +6892,12 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: question
+      value: "\u201COur host shows a fine taste as always, such a unique choice for
+        covering their neck. Would you think it\u2019s enough to protect them from
+        the wind?\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
       value: 3
@@ -7925,16 +7947,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 424726846}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: question
+      value: "\u201CWhat an exquisite garment our host is brandishing on this lovely
+        night. What do its colours remind you of?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
-      value: 
+      value: "\u201CDon\u2019t you have eyes? Check for yourself.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: 
+      value: "\u201COh, for sure it\u2019s that of a soothing fire\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
