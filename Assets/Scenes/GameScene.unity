@@ -131,6 +131,33 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: "\u201CWhat are you trying to do? Get off.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: "\u201COh yes, you could say they really love the smell of their lawn.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: "\u201CDefinitely, it\u2019s almost impossible to interrupt them while
+        they\u2019re dancing.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[3]'
+      value: "\u201CThe view up there it\u2019s lovely, so who wouldn\u2019t spend
+        most of their time admiring their guests from above?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: "\u201CProbably they love the food it offers more than the room they\u2019re
+        stationed in.\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -858,6 +885,23 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: "\u201CThat\u2019s not something I\u2019m willing to discuss with you.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: "\u201CYes, quite an interesting choice but it looks majestic on them.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: "\u201CWhat are you talking about? They aren\u2019t wearing anything
+        on their head.\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -4164,6 +4208,30 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: "\u201CWhy should I be concerned with what you think? Leave me alone.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: "\u201CDefinitely not, their voice is as low as always.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: "\u201CIt seems perfectly normal to me, neither too low or too high.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[3]'
+      value: "\u201CIt\u2019s a shrill voice that perfectly fits our host.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: "\u201CTheir words sounded as melodic as it was almost singing.\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -4364,6 +4432,24 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 424726846}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: "\u201CMy bad, did I give you the impression I wanted to talk with you?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: "\u201CMaybe it\u2019s not designed to keep a person warm, but it sure
+        looks good on them.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: "\u201CI\u2019m quite sure they didn\u2019t adorn their neck with anything
+        like that.\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -5241,23 +5327,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
-      value: "\u201COh, for sure it\u2019s that of a soothing fire\u201D"
+      value: "\u201CDon\u2019t you have eyes? Check for yourself.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: "\u201CMmh\u2026 a calm sea?\u201D"
+      value: "\u201COh, for sure it\u2019s that of a soothing fire\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
-      value: "\u201CTo me it\u2019s like a flourishing field of grass\u201D"
+      value: "\u201CMmh\u2026 a calm sea?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: "\u201CA chirpy canary I\u2019d say\u201D"
+      value: "\u201CTo me it\u2019s like a flourishing field of grass\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: 'dialogues.Array.data[4]'
-      value: "\u201CDon\u2019t you have eyes? Check for yourself.\u201D"
+      value: "\u201CA lovely lilac bouquet\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x

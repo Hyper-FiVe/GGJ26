@@ -28,6 +28,7 @@ public class NPC : MonoBehaviour
         public Title title;
         public bool interacted;
         public Faction faction;
+        //public bool target
     }
 
     public NPCFeatures features;

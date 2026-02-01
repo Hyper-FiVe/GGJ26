@@ -24,7 +24,6 @@ public class ButtonManager : MonoBehaviour
 
     public void OnClick()
     {
-        string dialogue = "Hai premuto un bottone";
 
         // logica
         npc = GameManager.Instance.InteractingNPC;
@@ -42,7 +41,7 @@ public class ButtonManager : MonoBehaviour
                     if (npc.features.faction == Utils.Faction.neutral)
                     {
                         // qui mettiamo la risposta neutra
-                        answer = dialogues[4];
+                        answer = dialogues[0];
                     } else
                     {
                         if (npc.features.faction == Utils.Faction.enemy)
@@ -53,16 +52,92 @@ public class ButtonManager : MonoBehaviour
                 }
                     break;
             case "Head":
-
+                if (npc.features.faction == Utils.Faction.ally)
+                {
+                    // serve sapere l'attributo dell'npc da trovare
+                    // dopo si restituisce la risposta corrispondente a quel colore
+                }
+                else
+                {
+                    if (npc.features.faction == Utils.Faction.neutral)
+                    {
+                        // qui mettiamo la risposta neutra
+                        answer = dialogues[0];
+                    }
+                    else
+                    {
+                        if (npc.features.faction == Utils.Faction.enemy)
+                        {
+                            // qui si mette una risposta random tra tutte tranne quella giusta
+                        }
+                    }
+                }
                 break;
             case "Neck":
-
+                if (npc.features.faction == Utils.Faction.ally)
+                {
+                    // serve sapere l'attributo dell'npc da trovare
+                    // dopo si restituisce la risposta corrispondente a quel colore
+                }
+                else
+                {
+                    if (npc.features.faction == Utils.Faction.neutral)
+                    {
+                        // qui mettiamo la risposta neutra
+                        answer = dialogues[0];
+                    }
+                    else
+                    {
+                        if (npc.features.faction == Utils.Faction.enemy)
+                        {
+                            // qui si mette una risposta random tra tutte tranne quella giusta
+                        }
+                    }
+                }
                 break;
             case "Voice":
-
+                if (npc.features.faction == Utils.Faction.ally)
+                {
+                    // serve sapere l'attributo dell'npc da trovare
+                    // dopo si restituisce la risposta corrispondente a quel colore
+                }
+                else
+                {
+                    if (npc.features.faction == Utils.Faction.neutral)
+                    {
+                        // qui mettiamo la risposta neutra
+                        answer = dialogues[0];
+                    }
+                    else
+                    {
+                        if (npc.features.faction == Utils.Faction.enemy)
+                        {
+                            // qui si mette una risposta random tra tutte tranne quella giusta
+                        }
+                    }
+                }
                 break;
             case "Position":
-
+                if (npc.features.faction == Utils.Faction.ally)
+                {
+                    // serve sapere l'attributo dell'npc da trovare
+                    // dopo si restituisce la risposta corrispondente a quel colore
+                }
+                else
+                {
+                    if (npc.features.faction == Utils.Faction.neutral)
+                    {
+                        // qui mettiamo la risposta neutra
+                        answer = dialogues[0];
+                    }
+                    else
+                    {
+                        if (npc.features.faction == Utils.Faction.enemy)
+                        {
+                            // qui si mette una risposta random tra tutte tranne quella giusta
+                        }
+                    }
+                }
                 break;
         }
 
