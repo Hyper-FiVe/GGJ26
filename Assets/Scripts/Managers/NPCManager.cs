@@ -20,7 +20,6 @@ public class NPCManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(transform.parent);
         }
         else
         {

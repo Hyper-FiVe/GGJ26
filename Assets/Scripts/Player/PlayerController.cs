@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Utils;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -11,11 +12,13 @@ public class PlayerController : MonoBehaviour
     public float footstepsTime = 0.5f;
 
     private CharacterController controller;
+    private Player player;
     private Transform cameraTransform;
     private AudioSource audioSource;
     private Vector2 moveInput;
     private Vector3 movement;
     private float rotationX;
+    private Vector3 startingPosition;
 
     public bool IsInteracting { get; set; } = false;
 
@@ -23,8 +26,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        player = GetComponent<Player>();
         cameraTransform = Camera.main.transform;
         audioSource = GetComponent<AudioSource>();
+        startingPosition = transform.position;
 
         StartCoroutine(Footsteps());
     }
@@ -66,6 +71,20 @@ public class PlayerController : MonoBehaviour
         {
             IsInteracting = true;
             GameManager.Instance.InteractableNPC.Interact();
+        }
+    }
+
+    public void OnSwitch(InputAction.CallbackContext context)
+    {
+        if (!IsInteracting && context.started)
+        {
+            transform.position = startingPosition;
+            Mask mask;
+            do
+            {
+                mask = (Mask)Random.Range(0, 3);
+            } while (mask == player.mask);
+            player.mask = mask;
         }
     }
 

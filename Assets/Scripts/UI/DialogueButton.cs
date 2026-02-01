@@ -12,10 +12,17 @@ public class DialogueButton : MonoBehaviour
 
     public TextMeshProUGUI textBox;
 
+    private Transform questChild;
+
+    private void Start()
+    {
+        questChild = transform.GetChild(0);
+    }
+
     public void OnClick()
     {
         npc = GameManager.Instance.InteractingNPC;
-        string quest = GameObject.FindWithTag("Quest").GetComponentInChildren<TMP_Text>().name;
+        string quest = questChild.name;
         int correctIndex;
 
         switch (quest)
