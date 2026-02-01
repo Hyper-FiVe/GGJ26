@@ -13,4 +13,9 @@ public class MenuButton : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void OnQuit()
+    {
+        Application.Quit();
+    }
 }
