@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public static class Utils
 {
     public enum Mask
@@ -26,8 +28,8 @@ public static class Utils
     public enum Title
     {
         PRINCE,
-        PRINCESS,
         DUKE,
+        PRINCESS,
         DUCHESS
     }
 
@@ -45,4 +47,12 @@ public static class Utils
         NEUTRAL,
         ENEMY
     }
+
+    public static List<string> titles = new List<string>()
+    {
+        "Prince",
+        "Duke",
+        "Princess",
+        "Duchess"
+    };
 }

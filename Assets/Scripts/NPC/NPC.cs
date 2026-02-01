@@ -42,12 +42,39 @@ public class NPC : MonoBehaviour
         mainCamera = Camera.main;
 
         features.sex = Convert.ToBoolean(Random.Range(0, 2));
-        features.mask = (Mask)Random.Range(0, 3);
         features.color = (NPCColor)Random.Range(0, 4);
+
+        int prefabIndex = (int)features.color;
+        GameObject prefab = (features.sex) ?
+            NPCManager.Instance.malePrefabs[prefabIndex] :
+            NPCManager.Instance.femalePrefabs[prefabIndex];
+        GameObject body = Instantiate(prefab, transform);
+
+        body.AddComponent<Animator>().runtimeAnimatorController =
+            GetComponent<Animator>().runtimeAnimatorController;
+
+        features.mask = (Mask)Random.Range(0, 3);
+
         features.head = Convert.ToBoolean(Random.Range(0, 2));
+        if (features.head)
+        {
+            prefab = (features.sex) ? NPCManager.Instance.maleHead : NPCManager.Instance.femaleHead;
+            Instantiate(prefab, transform);
+        }
+
         features.neck = Convert.ToBoolean(Random.Range(0, 2));
+        if (features.neck)
+        {
+            prefab = (features.sex) ? NPCManager.Instance.maleNeck : NPCManager.Instance.femaleNeck;
+            Instantiate(prefab, transform);
+        }
+
+
         features.voice = (Voice)Random.Range(0, 4);
-        features.title = (Title)Random.Range(0, 4);
+
+        int offset = features.sex ? 0 : 2;
+        features.title = (Title)Random.Range(offset, 2 + offset);
+
         features.interacted = Convert.ToBoolean(Random.Range(0, 2));
 
         SetFaction();
