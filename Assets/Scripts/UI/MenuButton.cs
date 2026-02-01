@@ -14,6 +14,11 @@ public class MenuButton : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void OnEndGame()
+    {
+        SceneManager.LoadScene("UIScene_Menu");
+    }
+
     public void OnQuit()
     {
         Application.Quit();

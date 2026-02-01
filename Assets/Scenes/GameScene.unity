@@ -3496,13 +3496,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 784762196}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 784762201}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: OnEndGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3748,13 +3748,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 854855328}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 854855333}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: OnEndGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4904,7 +4904,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
   m_PrefabInstance: {fileID: 1173270047}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1065147103
+--- !u!114 &1065147108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4913,9 +4913,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1065147101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f28c4e8ffbc3434fab2a501a130dfdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 503fb00869f2c5c4989b4db7f603a2b3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuButton
+  m_EditorClassIdentifier: Assembly-CSharp::TargetButton
+  winCanvas: {fileID: 1681560351}
+  loseCanvas: {fileID: 507339782}
 --- !u!4 &1070623690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7458833944103459716, guid: a10e5850c9811f24f8f27440babd8540, type: 3}
@@ -5636,27 +5638,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1065147103}
+      objectReference: {fileID: 1065147108}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnSwitchCanvas
+      value: OnTarget
       objectReference: {fileID: 0}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenuButton, Assembly-CSharp
+      value: TargetButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1681560351}
+      objectReference: {fileID: 0}
     - target: {fileID: 2177780633738853589, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3384835089847649200, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_Sprite
@@ -5746,7 +5748,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Quest
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
     m_AddedGameObjects:
@@ -5756,7 +5759,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1065147103}
+      addedObject: {fileID: 1065147108}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
 --- !u!224 &1199231781 stripped
 RectTransform:
