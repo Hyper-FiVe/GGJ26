@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public NPC InteractingNPC { get; set; }
 
     private PlayerController playerController;
+    public static Player pc;
 
     void Awake()
     {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        pc = GameObject.FindWithTag("Player").GetComponent<Player>();
     }
 
     public void StartDialogue()
@@ -39,4 +41,6 @@ public class GameManager : MonoBehaviour
         InteractingNPC.EndInteraction();
         playerController.IsInteracting = false;
     }
+
+    
 }

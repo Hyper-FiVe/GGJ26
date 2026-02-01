@@ -4,9 +4,9 @@ public static class Utils
 {
     public enum Mask
     {
-        a,
-        b,
-        c
+        team1,
+        team2,
+        team3
     }
 
     public enum NPCColor
@@ -19,17 +19,24 @@ public static class Utils
 
     public enum Voice
     {
-        a,
-        b,
-        c,
-        d
+        low,
+        medium,
+        high,
+        musical
     }
 
     public enum Title
     {
-        a,
-        b,
-        c,
-        d
+        prince,
+        princess,
+        duke,
+        duchess
+    }
+
+    public enum Faction
+    {
+        ally,
+        neutral,
+        enemy
     }
 }

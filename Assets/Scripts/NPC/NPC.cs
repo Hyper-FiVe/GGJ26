@@ -27,6 +27,7 @@ public class NPC : MonoBehaviour
         public Room room;
         public Title title;
         public bool interacted;
+        public Faction faction;
     }
 
     public NPCFeatures features;
@@ -48,6 +49,7 @@ public class NPC : MonoBehaviour
         features.voice = (Voice)Random.Range(0, 4);
         features.title = (Title)Random.Range(0, 4);
         features.interacted = Convert.ToBoolean(Random.Range(0, 2));
+        this.SetFaction();
     }
 
     // Update is called once per frame
@@ -96,4 +98,47 @@ public class NPC : MonoBehaviour
         float rotationSpeed = angleDifference / rotationTime;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
+
+    public void SetFaction()
+    {
+        if (this.features.mask == GameManager.pc.mask)
+        {
+            this.features.faction = Utils.Faction.ally;
+        }
+        if (this.features.mask == Utils.Mask.team1)
+        {
+            if (GameManager.pc.mask == Utils.Mask.team2)
+            {
+                this.features.faction = Utils.Faction.enemy;
+            }
+            if (GameManager.pc.mask == Utils.Mask.team3)
+            {
+                this.features.faction = Utils.Faction.neutral;
+            }
+        }
+        if (this.features.mask == Utils.Mask.team2)
+        {
+            if (GameManager.pc.mask == Utils.Mask.team3)
+            {
+                this.features.faction = Utils.Faction.enemy;
+            }
+            if (GameManager.pc.mask == Utils.Mask.team1)
+            {
+                this.features.faction = Utils.Faction.neutral;
+            }
+        }
+        if (this.features.mask == Utils.Mask.team3)
+        {
+            if (GameManager.pc.mask == Utils.Mask.team1)
+            {
+                this.features.faction = Utils.Faction.enemy;
+            }
+            if (GameManager.pc.mask == Utils.Mask.team2)
+            {
+                this.features.faction = Utils.Faction.neutral;
+            }
+        }
+
+    }
+
 }

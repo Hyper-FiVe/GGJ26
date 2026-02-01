@@ -119,6 +119,173 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &54731023
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 548786088}
+    m_Modifications:
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 424726846}
+    - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 240.20001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -900
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_text
+      value: "\u201CFor how much time our host spends in that spot you could bet
+        it\u2019s their favourite place in this beautiful mansion, wouldn\u2019t
+        you agree\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_fontSize
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014436618943618720, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Position
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Quest
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
 --- !u!1 &91236001
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +766,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!224 &239986316 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+  m_PrefabInstance: {fileID: 54731023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &290637927
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,9 +999,17 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Head
+      objectReference: {fileID: 0}
     - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_Name
-      value: Domands 2
+      value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Quest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1647,6 +1827,7 @@ RectTransform:
   - {fileID: 1163697645}
   - {fileID: 1199231781}
   - {fileID: 493600219}
+  - {fileID: 239986316}
   - {fileID: 1735774444}
   m_Father: {fileID: 197324212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4120,9 +4301,17 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Voice
+      objectReference: {fileID: 0}
     - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_Name
-      value: Domands 4
+      value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Quest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4313,9 +4502,17 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Neck
+      objectReference: {fileID: 0}
     - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_Name
-      value: Domands 3
+      value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Quest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4981,6 +5178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5036,7 +5237,27 @@ PrefabInstance:
       objectReference: {fileID: 424726846}
     - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: dialogues.Array.size
-      value: 0
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: "\u201COh, for sure it\u2019s that of a soothing fire\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: "\u201CMmh\u2026 a calm sea?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: "\u201CTo me it\u2019s like a flourishing field of grass\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[3]'
+      value: "\u201CA chirpy canary I\u2019d say\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448408648917939218, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: "\u201CDon\u2019t you have eyes? Check for yourself.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 1120936571411305711, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_LocalScale.x
@@ -5211,9 +5432,17 @@ PrefabInstance:
       propertyPath: m_IsTextObjectScaleStatic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6119097422026033025, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_Name
+      value: Colour
+      objectReference: {fileID: 0}
     - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
       propertyPath: m_Name
-      value: Domands 1
+      value: Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512202103168170772, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
+      propertyPath: m_TagString
+      value: Quest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
