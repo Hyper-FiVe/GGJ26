@@ -28,7 +28,6 @@ public class NPC : MonoBehaviour
         public Title title;
         public bool interacted;
         public Faction faction;
-        //public bool target
     }
 
     public NPCFeatures features;
@@ -50,7 +49,10 @@ public class NPC : MonoBehaviour
         features.voice = (Voice)Random.Range(0, 4);
         features.title = (Title)Random.Range(0, 4);
         features.interacted = Convert.ToBoolean(Random.Range(0, 2));
-        this.SetFaction();
+
+        SetFaction();
+
+        GameManager.Instance.AddNPC(this);
     }
 
     // Update is called once per frame
@@ -102,44 +104,42 @@ public class NPC : MonoBehaviour
 
     public void SetFaction()
     {
-        if (this.features.mask == GameManager.pc.mask)
+        if (features.mask == GameManager.Instance.Player.mask)
         {
-            this.features.faction = Utils.Faction.ally;
+            features.faction = Faction.ALLY;
         }
-        if (this.features.mask == Utils.Mask.team1)
+        if (features.mask == Mask.TEAM1)
         {
-            if (GameManager.pc.mask == Utils.Mask.team2)
+            if (GameManager.Instance.Player.mask == Mask.TEAM2)
             {
-                this.features.faction = Utils.Faction.enemy;
+                features.faction = Faction.ENEMY;
             }
-            if (GameManager.pc.mask == Utils.Mask.team3)
+            if (GameManager.Instance.Player.mask == Mask.TEAM3)
             {
-                this.features.faction = Utils.Faction.neutral;
-            }
-        }
-        if (this.features.mask == Utils.Mask.team2)
-        {
-            if (GameManager.pc.mask == Utils.Mask.team3)
-            {
-                this.features.faction = Utils.Faction.enemy;
-            }
-            if (GameManager.pc.mask == Utils.Mask.team1)
-            {
-                this.features.faction = Utils.Faction.neutral;
+                features.faction = Faction.NEUTRAL;
             }
         }
-        if (this.features.mask == Utils.Mask.team3)
+        if (features.mask == Mask.TEAM2)
         {
-            if (GameManager.pc.mask == Utils.Mask.team1)
+            if (GameManager.Instance.Player.mask == Mask.TEAM3)
             {
-                this.features.faction = Utils.Faction.enemy;
+                features.faction = Faction.ENEMY;
             }
-            if (GameManager.pc.mask == Utils.Mask.team2)
+            if (GameManager.Instance.Player.mask == Mask.TEAM1)
             {
-                this.features.faction = Utils.Faction.neutral;
+                features.faction = Faction.NEUTRAL;
             }
         }
-
+        if (features.mask == Mask.TEAM3)
+        {
+            if (GameManager.Instance.Player.mask == Mask.TEAM1)
+            {
+                features.faction = Faction.ENEMY;
+            }
+            if (GameManager.Instance.Player.mask == Mask.TEAM2)
+            {
+                features.faction = Faction.NEUTRAL;
+            }
+        }
     }
-
 }

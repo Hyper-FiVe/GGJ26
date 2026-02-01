@@ -10,10 +10,4 @@ public class Player : MonoBehaviour
     {
         mask = (Mask)Random.Range(0, 3);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

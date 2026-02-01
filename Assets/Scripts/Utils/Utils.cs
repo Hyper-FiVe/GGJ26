@@ -1,42 +1,48 @@
-using UnityEngine;
-
 public static class Utils
 {
     public enum Mask
     {
-        team1,
-        team2,
-        team3
+        TEAM1,
+        TEAM2,
+        TEAM3
     }
 
     public enum NPCColor
     {
-        red,
-        green,
-        blue,
-        yellow
+        RED,
+        GREEN,
+        BLUE,
+        PURPLE
     }
 
     public enum Voice
     {
-        low,
-        medium,
-        high,
-        musical
+        LOW,
+        MEDIUM,
+        HIGH,
+        MUSICAL
     }
 
     public enum Title
     {
-        prince,
-        princess,
-        duke,
-        duchess
+        PRINCE,
+        PRINCESS,
+        DUKE,
+        DUCHESS
+    }
+
+    public enum Room
+    {
+        GARDEN,
+        BALCONY,
+        DANCING_HALL,
+        BUFFET
     }
 
     public enum Faction
     {
-        ally,
-        neutral,
-        enemy
+        ALLY,
+        NEUTRAL,
+        ENEMY
     }
 }

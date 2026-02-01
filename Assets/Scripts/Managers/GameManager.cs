@@ -1,15 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public int npcCount = 8;
     public GameObject dialogueCanvas;
 
+    public NPC target;
+
     public static GameManager Instance { get; private set; }
+    public Player Player { get; private set; }
     public NPC InteractableNPC { get; set; }
     public NPC InteractingNPC { get; set; }
+    public int RoomNPCCount => npcCount / 4;
 
     private PlayerController playerController;
-    public static Player pc;
+    private List<GameObject> npcSpawnerObjects = new List<GameObject>();
+    private List<NPC> npcs;
 
     void Awake()
     {
@@ -24,10 +31,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        pc = GameObject.FindWithTag("Player").GetComponent<Player>();
+        Player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        playerController = Player.GetComponent<PlayerController>();
+        npcs = new List<NPC>(npcCount);
+        GameObject.FindGameObjectsWithTag("NPCSpawner", npcSpawnerObjects);
+
+        foreach (GameObject npcSpawner in npcSpawnerObjects)
+        {
+            npcSpawner.GetComponent<NPCSpawner>().Spawn();
+        }
+
+        target = npcs[Random.Range(0, npcs.Count)];
+    }
+
+    public void AddNPC(NPC npc)
+    {
+        npcs.Add(npc);
     }
 
     public void StartDialogue()
@@ -41,6 +63,4 @@ public class GameManager : MonoBehaviour
         InteractingNPC.EndInteraction();
         playerController.IsInteracting = false;
     }
-
-    
 }

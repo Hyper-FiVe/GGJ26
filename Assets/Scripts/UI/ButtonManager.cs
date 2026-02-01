@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -10,131 +12,118 @@ public class ButtonManager : MonoBehaviour
 
     public TextMeshProUGUI textBox;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnClick()
     {
-
-        // logica
         npc = GameManager.Instance.InteractingNPC;
-        question = (string)GameObject.FindWithTag("Quest").GetComponentInChildren<TMP_Text>().name;
-        
+        question = GameObject.FindWithTag("Quest").GetComponentInChildren<TMP_Text>().name;
+        int correctIndex;
+
         switch (question)
         {
             case "Colour":
-                if (npc.features.faction == Utils.Faction.ally)
+                correctIndex = (int)GameManager.Instance.target.features.color + 1;
+
+                if (npc.features.faction == Utils.Faction.ALLY)
                 {
-                    // serve sapere l'attributo dell'npc da trovare
-                    // dopo si restituisce la risposta corrispondente a quel colore
+                    answer = dialogues[correctIndex];
                 } else
                 {
-                    if (npc.features.faction == Utils.Faction.neutral)
+                    if (npc.features.faction == Utils.Faction.NEUTRAL)
                     {
-                        // qui mettiamo la risposta neutra
                         answer = dialogues[0];
                     } else
                     {
-                        if (npc.features.faction == Utils.Faction.enemy)
+                        if (npc.features.faction == Utils.Faction.ENEMY)
                         {
-                            // qui si mette una risposta random tra tutte tranne quella giusta
+                            answer = GetRandomAnswer(correctIndex);
                         }
                     }
                 }
                     break;
             case "Head":
-                if (npc.features.faction == Utils.Faction.ally)
+                correctIndex = Convert.ToInt32(GameManager.Instance.target.features.head) + 1;
+
+                if (npc.features.faction == Utils.Faction.ALLY)
                 {
-                    // serve sapere l'attributo dell'npc da trovare
-                    // dopo si restituisce la risposta corrispondente a quel colore
+                    answer = dialogues[correctIndex];
                 }
                 else
                 {
-                    if (npc.features.faction == Utils.Faction.neutral)
+                    if (npc.features.faction == Utils.Faction.NEUTRAL)
                     {
-                        // qui mettiamo la risposta neutra
                         answer = dialogues[0];
                     }
                     else
                     {
-                        if (npc.features.faction == Utils.Faction.enemy)
+                        if (npc.features.faction == Utils.Faction.ENEMY)
                         {
-                            // qui si mette una risposta random tra tutte tranne quella giusta
+                            answer = GetRandomAnswer(correctIndex);
                         }
                     }
                 }
                 break;
             case "Neck":
-                if (npc.features.faction == Utils.Faction.ally)
+                correctIndex = Convert.ToInt32(GameManager.Instance.target.features.neck) + 1;
+
+                if (npc.features.faction == Utils.Faction.ALLY)
                 {
-                    // serve sapere l'attributo dell'npc da trovare
-                    // dopo si restituisce la risposta corrispondente a quel colore
+                    answer = dialogues[correctIndex];
                 }
                 else
                 {
-                    if (npc.features.faction == Utils.Faction.neutral)
+                    if (npc.features.faction == Utils.Faction.NEUTRAL)
                     {
-                        // qui mettiamo la risposta neutra
                         answer = dialogues[0];
                     }
                     else
                     {
-                        if (npc.features.faction == Utils.Faction.enemy)
+                        if (npc.features.faction == Utils.Faction.ENEMY)
                         {
-                            // qui si mette una risposta random tra tutte tranne quella giusta
+                            answer = GetRandomAnswer(correctIndex);
                         }
                     }
                 }
                 break;
             case "Voice":
-                if (npc.features.faction == Utils.Faction.ally)
+                correctIndex = (int)GameManager.Instance.target.features.voice + 1;
+
+                if (npc.features.faction == Utils.Faction.ALLY)
                 {
-                    // serve sapere l'attributo dell'npc da trovare
-                    // dopo si restituisce la risposta corrispondente a quel colore
+                    answer = dialogues[correctIndex];
                 }
                 else
                 {
-                    if (npc.features.faction == Utils.Faction.neutral)
+                    if (npc.features.faction == Utils.Faction.NEUTRAL)
                     {
-                        // qui mettiamo la risposta neutra
                         answer = dialogues[0];
                     }
                     else
                     {
-                        if (npc.features.faction == Utils.Faction.enemy)
+                        if (npc.features.faction == Utils.Faction.ENEMY)
                         {
-                            // qui si mette una risposta random tra tutte tranne quella giusta
+                            answer = GetRandomAnswer(correctIndex);
                         }
                     }
                 }
                 break;
             case "Position":
-                if (npc.features.faction == Utils.Faction.ally)
+                correctIndex = (int)GameManager.Instance.target.features.room + 1;
+
+                if (npc.features.faction == Utils.Faction.ALLY)
                 {
-                    // serve sapere l'attributo dell'npc da trovare
-                    // dopo si restituisce la risposta corrispondente a quel colore
+                    answer = dialogues[correctIndex];
                 }
                 else
                 {
-                    if (npc.features.faction == Utils.Faction.neutral)
+                    if (npc.features.faction == Utils.Faction.NEUTRAL)
                     {
-                        // qui mettiamo la risposta neutra
                         answer = dialogues[0];
                     }
                     else
                     {
-                        if (npc.features.faction == Utils.Faction.enemy)
+                        if (npc.features.faction == Utils.Faction.ENEMY)
                         {
-                            // qui si mette una risposta random tra tutte tranne quella giusta
+                            answer = GetRandomAnswer(correctIndex);
                         }
                     }
                 }
@@ -148,5 +137,15 @@ public class ButtonManager : MonoBehaviour
     public void OnExitDialogue()
     {
         GameManager.Instance.EndDialogue();
+    }
+
+    private string GetRandomAnswer(int correctIndex)
+    {
+        int index;
+        do
+        {
+            index = Random.Range(1, dialogues.Count);
+        } while (index == correctIndex);
+        return dialogues[index];
     }
 }

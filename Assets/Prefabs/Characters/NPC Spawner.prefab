@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 773176023720387311}
   m_Layer: 0
   m_Name: NPC Spawner
-  m_TagString: Untagged
+  m_TagString: NPCSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCSpawner
   npcPrefab: {fileID: 2093956336104331694, guid: 8c08f308c8d88c545bcdfc8b15bebf1f, type: 3}
-  npcCount: 2
+  room: 0
 --- !u!1001 &2739636706906796845
 PrefabInstance:
   m_ObjectHideFlags: 0
