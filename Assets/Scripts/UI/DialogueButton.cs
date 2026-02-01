@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class ButtonManager : MonoBehaviour
+public class DialogueButton : MonoBehaviour
 {
     public NPC npc;
     public List<string> dialogues = new List<string>();
