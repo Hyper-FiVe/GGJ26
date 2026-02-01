@@ -3,9 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    public GameObject targetCanvas;
-
-    public void OnSwitchCanvas()
+    public void OnSwitchCanvas(GameObject targetCanvas)
     {
         transform.parent.gameObject.SetActive(false);
         targetCanvas.SetActive(true);
