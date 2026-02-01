@@ -2617,7 +2617,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1803247898}
-  - {fileID: 1201608342}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &547686690
@@ -2798,7 +2797,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 37259940d74be3343a84def2217fe8bb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5373,7 +5372,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 758b709d1d8afdd40bff12c26deb56f3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5766,55 +5765,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1396214086939747431, guid: 9c6732c903c43fb4a831489400f407ed, type: 3}
   m_PrefabInstance: {fileID: 1661585332}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1201608341
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1201608342}
-  - component: {fileID: 1201608343}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1201608342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201608341}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 547686689}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1201608343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201608341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d55a50b4a79458f42952998e7831f5ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  waltz: {fileID: 8300000, guid: 758b709d1d8afdd40bff12c26deb56f3, type: 3}
-  fountain: {fileID: 8300000, guid: 2e45ba11efed5764dac439bfec2557bd, type: 3}
-  garden: {fileID: 8300000, guid: 37259940d74be3343a84def2217fe8bb, type: 3}
-  kitchen: {fileID: 8300000, guid: eb0a992e1955ac444abd7ce94ca26026, type: 3}
-  footsteps: {fileID: 8300000, guid: 38345a192a641f5459cade4b9f20fcdd, type: 3}
 --- !u!1 &1253173029
 GameObject:
   m_ObjectHideFlags: 0
@@ -6762,7 +6712,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2e45ba11efed5764dac439bfec2557bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7425,9 +7375,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCManager
   malePrefabs:
-  - {fileID: 4866640116422259481, guid: 60ce046d62f3ea44f873b2151b4fe9d8, type: 3}
-  - {fileID: 7161144867615180822, guid: 75a22962f821a8b408f007bc1021c285, type: 3}
-  - {fileID: 5355796676701581009, guid: 4ae35e313617d704a81dfa59223db11e, type: 3}
+  - {fileID: 5154268730403113488, guid: 54368a1e891c0e040b046fede3776894, type: 3}
+  - {fileID: 1744464096565022058, guid: eddca8655a3feff488f3c6e13f5c4aa0, type: 3}
+  - {fileID: 397987793947267613, guid: 70c34df0d4fa321428dd4514478e9d0a, type: 3}
   - {fileID: 1168622440170018400, guid: f9f8155b6c69d9e4baf596e3b9e786a2, type: 3}
   femalePrefabs:
   - {fileID: 6092719968814718413, guid: fbcdd3765d3aae54fb879c6675fe95cd, type: 3}
@@ -7648,7 +7598,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eb0a992e1955ac444abd7ce94ca26026, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0

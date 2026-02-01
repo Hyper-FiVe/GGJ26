@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,10 +8,13 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float lookSpeed = 0.05f;
     public float lookRange = 80f;
+    public float footstepsTime = 0.5f;
 
     private CharacterController controller;
     private Transform cameraTransform;
+    private AudioSource audioSource;
     private Vector2 moveInput;
+    private Vector3 movement;
     private float rotationX;
 
     public bool IsInteracting { get; set; } = false;
@@ -20,6 +24,9 @@ public class PlayerController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         cameraTransform = Camera.main.transform;
+        audioSource = GetComponent<AudioSource>();
+
+        StartCoroutine(Footsteps());
     }
 
     // Update is called once per frame
@@ -64,7 +71,23 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        Vector3 movement = transform.right * moveInput.x + transform.forward * moveInput.y;
+        movement = transform.right * moveInput.x + transform.forward * moveInput.y;
         controller.SimpleMove(moveSpeed * movement);
+    }
+
+    private IEnumerator Footsteps()
+    {
+        while (true)
+        {
+            if (movement != Vector3.zero)
+            {
+                audioSource.Play();
+                yield return new WaitForSeconds(footstepsTime);
+            }
+            else
+            {
+                yield return null;
+            }
+        }
     }
 }
