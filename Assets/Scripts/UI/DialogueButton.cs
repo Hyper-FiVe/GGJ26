@@ -15,10 +15,10 @@ public class DialogueButton : MonoBehaviour
     public void OnClick()
     {
         npc = GameManager.Instance.InteractingNPC;
-        question = GameObject.FindWithTag("Quest").GetComponentInChildren<TMP_Text>().name;
+        string quest = GameObject.FindWithTag("Quest").GetComponentInChildren<TMP_Text>().name;
         int correctIndex;
 
-        switch (question)
+        switch (quest)
         {
             case "Colour":
                 correctIndex = (int)GameManager.Instance.target.features.color + 1;
@@ -130,8 +130,8 @@ public class DialogueButton : MonoBehaviour
                 break;
         }
 
-        textBox.text = answer;
-        //transform.parent.gameObject.SetActive(false);
+        textBox.text = question + "\n\n" + answer;
+        GameManager.Instance.InteractingNPC.voice.Play();
     }
 
     public void OnExitDialogue()

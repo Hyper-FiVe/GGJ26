@@ -7,6 +7,8 @@ public class NPCManager : MonoBehaviour
 
     public List<GameObject> malePrefabs = new List<GameObject>();
     public List<GameObject> femalePrefabs = new List<GameObject>();
+    public List<GameObject> maskPrefabs = new List<GameObject>();
+    public List<AudioClip> voices = new List<AudioClip>();
 
     public GameObject maleHead;
     public GameObject femaleHead;

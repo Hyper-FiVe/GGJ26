@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public int npcCount = 8;
     public GameObject dialogueCanvas;
+    public TextMeshProUGUI introText;
 
     public NPC target;
 
@@ -54,7 +56,10 @@ public class GameManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        string title = Utils.titles[(int)InteractingNPC.features.title];
+        introText.text = $"“Greetings, you can refer to me as {title}. What thou need?”";
         dialogueCanvas.SetActive(true);
+        InteractingNPC.voice.Play();
     }
 
     public void EndDialogue()

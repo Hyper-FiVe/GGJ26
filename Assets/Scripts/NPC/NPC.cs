@@ -14,6 +14,7 @@ public class NPC : MonoBehaviour
     private Quaternion targetRotation;
     private Transform player;
     private Camera mainCamera;
+    public AudioSource voice;
 
     [Serializable]
     public struct NPCFeatures
@@ -54,6 +55,7 @@ public class NPC : MonoBehaviour
             GetComponent<Animator>().runtimeAnimatorController;
 
         features.mask = (Mask)Random.Range(0, 3);
+        Instantiate(NPCManager.Instance.maskPrefabs[(int)features.mask], transform);
 
         features.head = Convert.ToBoolean(Random.Range(0, 2));
         if (features.head)
@@ -69,8 +71,9 @@ public class NPC : MonoBehaviour
             Instantiate(prefab, transform);
         }
 
-
         features.voice = (Voice)Random.Range(0, 4);
+        voice = GetComponent<AudioSource>();
+        voice.resource = NPCManager.Instance.voices[(int)features.voice];
 
         int offset = features.sex ? 0 : 2;
         features.title = (Title)Random.Range(offset, 2 + offset);
